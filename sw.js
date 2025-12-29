@@ -1,5 +1,5 @@
 // sw.js
-const CACHE_NAME = 'simple-calc-app-v10'; 
+const CACHE_NAME = 'simple-calc-app-v11'; 
 
 const urlsToCache = [
   './',
