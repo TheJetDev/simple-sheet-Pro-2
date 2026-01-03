@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -510,7 +510,7 @@
             de: { title: "Simple Sheet PRO", modeBase: "Vom Basiswert", descBase: "Feste Referenz: Jede Zeile nutzt den oberen Basiswert", modePrev: "Flow", descPrev: "Kettenrechnung. Wählen Sie 🏠 oder 🔗 pro Zeile.", masterLabelName: "Name:", masterLabelStart: "Basiswert", rowLabel: "Label", copyMsg: "Kopiert!", btnClear: "Löschen", btnExport: "Export", btnImport: "Import", btnReset: "Reset", confirmReset: "Alles zurücksetzen?", addRow: "+ Zeile", copyAll: "Alles kopieren", calcTitle: "Rechner", btnSave: "Speichern", msgSave: "Gespeichert", msgLoad: "Geladen", confirmDel: "Löschen?", btnEdit: "Bearbeiten", btnDone: "Fertig", msgExported: "Exportiert!", promptImport: "Code einfügen:", msgError: "Fehler" },
             it: { title: "Simple Sheet PRO", modeBase: "Dalla Base", descBase: "Rif. fisso: ogni riga usa il valore iniziale in alto", modePrev: "Flusso", descPrev: "Calcolo a catena. Scegli 🏠 o 🔗 per riga.", masterLabelName: "Nome:", masterLabelStart: "Valore Base", rowLabel: "Etichetta", copyMsg: "Copiato!", btnClear: "Cancella", btnExport: "Esporta", btnImport: "Importa", btnReset: "Reset", confirmReset: "Ripristinare tutto?", addRow: "+ Riga", copyAll: "Copia tutto", calcTitle: "Calcolatrice", btnSave: "Salva", msgSave: "Salvato", msgLoad: "Caricato", confirmDel: "Elimina?", btnEdit: "Modifica", btnDone: "Fatto", msgExported: "Esportato!", promptImport: "Incolla codice:", msgError: "Errore" }
         };
-        let currentLanguage = 'ja'; 
+        let currentLanguage = 'en'; 
         let isEditMode = false;
         let currentCalc = "0";
 
@@ -529,7 +529,7 @@
             // 保存された設定の読み込み
             const s = JSON.parse(localStorage.getItem('simpleSheetSettings') || '{}');
             applyData(s);
-            setLanguage(localStorage.getItem('simpleSheetLang') || 'ja'); 
+            setLanguage(localStorage.getItem('simpleSheetLang') || 'en'); 
             renderSaveList();
         }
 
